@@ -20,12 +20,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24.x
-      
-      - name: Install pnpm
-        run: npm install -g pnpm
 
       - name: Build cinny client
-        run: pnpm install && pnpm build
+        run: npm ci && npm run build
 
       - name: Upload artifact
         run: npx wrangler deploy
