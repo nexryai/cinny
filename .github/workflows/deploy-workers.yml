@@ -23,6 +23,9 @@ jobs:
 
       - name: Build cinny client
         run: npm ci && npm run build
+      
+      - name: Debug echo
+        run: cat dist/public/element-call/index.html
 
       - name: Upload artifact
         run: npx wrangler deploy
