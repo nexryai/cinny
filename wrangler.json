@@ -1,6 +1,6 @@
 {
   "name": "cinny",
-  "compatibility_date": "2025-11-25",
+  "compatibility_date": "2026-06-19",
   "assets": {
     "directory": "./dist",
     "not_found_handling": "single-page-application"
